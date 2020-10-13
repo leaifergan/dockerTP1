@@ -180,12 +180,16 @@ Observez la sortie : on remarque que chacune des couches du système de fichiers
 ## 6- La pratique pour aller plus loin
 
 > Quelle commande docker permet d'afficher les différentes couches d'une image ? 
+  docker image history nom_image
 
 > Quelle commande docker permet de supprimer toutes les images non utilisées ? 
-
+  docker image prune
+  
 > Que permet de faire la commande `docker image save` ?
-
+  Enregistre les images dans une archive
+  
 > Comment puis-je connaître la taille totale d'une image ? 
+  docker image ls nom_image
 
 > Que permet de faire cette commande docker `docker images --no-trunc --digests --filter "dangling=true"` ? 
-
+  no-trunc ça coupe pas les longues chaines, digest ça affiche une description et on filtre sur les images qui ont dangling=true
