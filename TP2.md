@@ -186,10 +186,11 @@ Observez la sortie : on remarque que chacune des couches du système de fichiers
   docker image prune
   
 > Que permet de faire la commande `docker image save` ?
-  Enregistre les images dans une archive
+  Enregistre les images dans une archive .targz
   
 > Comment puis-je connaître la taille totale d'une image ? 
   docker image ls nom_image
+  docker images
 
 > Que permet de faire cette commande docker `docker images --no-trunc --digests --filter "dangling=true"` ? 
-  no-trunc ça coupe pas les longues chaines, digest ça affiche une description et on filtre sur les images qui ont dangling=true
+  no-trunc affiche le contenu sans le tronquer, digest ça affiche une description id de l'image en cha56 et on filtre sur les images qui ont dangling=true filtre les images qui n'ont pas de version.
