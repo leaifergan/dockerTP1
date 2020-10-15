@@ -25,4 +25,5 @@ docker network create --driver bridge mon-bridge
 docker run --network=<network-name>
 docker network connect nom_network nom_container nom_host OU docker container run --network myhost mycontainer
 ip addr show nom_network
-docker network inspect my_host
+docker network inspect my_host 
+docker container inspect nom-container
